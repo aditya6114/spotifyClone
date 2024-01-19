@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./utility.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="leftup">
+          <div class="logo">
+            <img class="invert" src="logo.svg" alt="" />
+          </div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="" />Home</li>
+            <li><img class="invert" src="search.svg" alt="" />Search</li>
+          </ul>
+        </div>
+        <div class="leftdown">
+          <div class="library">
+            <img class="invert" src="library.svg" alt="" />Your Library
+          </div>
+          <div class="footer">
+            <a
+              href="https://www.spotify.com/jp/legal/"
+              class="Link-sc-k8gsk-0 IfdYP Link__BottomLink-sc-j13lu8-0 fvCbl"
+              data-encore-id="textLink"
+            >
+              <span
+                data-encore-id="type"
+                class="Type__TypeElement-sc-goli3j-0 dcdwKP"
+                >Legal</span
+              >
+            </a>
+
+            <a
+              href="https://www.spotify.com/jp/privacy/"
+              class="Link-sc-k8gsk-0 IfdYP Link__BottomLink-sc-j13lu8-0 fvCbl"
+              data-encore-id="textLink"
+            >
+              <span
+                data-encore-id="type"
+                class="Type__TypeElement-sc-goli3j-0 dcdwKP"
+                >Privacy Center</span
+              >
+            </a>
+
+            <a
+              href="https://www.spotify.com/jp/legal/privacy-policy/"
+              class="Link-sc-k8gsk-0 IfdYP Link__BottomLink-sc-j13lu8-0 fvCbl"
+              data-encore-id="textLink"
+            >
+              <span
+                data-encore-id="type"
+                class="Type__TypeElement-sc-goli3j-0 dcdwKP"
+                >Privacy Policy</span
+              >
+            </a>
+
+            <a
+              href="https://www.spotify.com/jp/legal/cookies-policy/"
+              class="Link-sc-k8gsk-0 IfdYP Link__BottomLink-sc-j13lu8-0 fvCbl"
+              data-encore-id="textLink"
+            >
+              <span
+                data-encore-id="type"
+                class="Type__TypeElement-sc-goli3j-0 dcdwKP"
+                >Cookies</span
+              >
+            </a>
+
+            <a
+              href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+              class="Link-sc-k8gsk-0 IfdYP Link__BottomLink-sc-j13lu8-0 fvCbl"
+              data-encore-id="textLink"
+            >
+              <span
+                data-encore-id="type"
+                class="Type__TypeElement-sc-goli3j-0 dcdwKP"
+                >About Ads</span
+              >
+            </a>
+
+            <a
+              href="https://www.spotify.com/jp/accessibility/"
+              class="Link-sc-k8gsk-0 IfdYP Link__BottomLink-sc-j13lu8-0 fvCbl"
+              data-encore-id="textLink"
+            >
+              <span
+                data-encore-id="type"
+                class="Type__TypeElement-sc-goli3j-0 dcdwKP"
+                >Accessibility</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="loginpanel">
+          <div>
+            <button class="invert tags">
+              <img src="lefttag.svg" alt="" />
+            </button>
+            <button class="invert tags">
+              <img src="righttag.svg" alt="" />
+            </button>
+          </div>
+          <div>
+            <button class="signup">Sign up</button>
+            <button class="login">Log in</button>
+          </div>
+        </div>
+        <div class="playlists">
+          <div class="playlistpanel">
+            <h2>Spotify Playlists</h2>
+          </div>
+          <div class="cardcontainer">
+            <div class="card">
+              <div class="playbtn">
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Background circle with green color -->
+                  <circle cx="12" cy="12" r="12" fill="#1ed760" />
+
+                  <!-- Path for your icon with white fill and scaled down size -->
+                  <path
+                    d="M15.5 12L9.5 15.5984L9.5 8.40159L15.5 12Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                    fill="#000000"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002ec94bf1083be30463d4b731d"
+                alt=""
+              />
+              <h3>Chillhop</h3>
+              <p>Blissed out beats and head nodding groove.</p>
+            </div>
+          </div>
+          <div class="playbar">
+            <div class="playbarBtn">
+              <img src="prev.svg" alt="" id="previous">
+              <img src="playbtn.svg" id="play"  alt="" />
+              <img src="next.svg" alt="" id="next">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" ></script>
+  </body>
+</html>
