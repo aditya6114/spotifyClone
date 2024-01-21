@@ -1,4 +1,4 @@
-/* async function playSongs() {
+async function playSongs() {
   const btn = document.getElementById("play");
   const btn1 = document.getElementById("previous");
   const btn2 = document.getElementById("next");
@@ -27,7 +27,7 @@
     }
   })
 }
-*/
+
 async function getSongs() {
   let a = await fetch("http://127.0.0.1:5500/songs/");
   let response = await a.text();
@@ -46,3 +46,4 @@ async function getSongs() {
 
 
 getSongs()
+playSongs()
