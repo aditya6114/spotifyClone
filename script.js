@@ -1,4 +1,4 @@
-async function playSongs() {
+/*async function playSongs() {
   const btn = document.getElementById("play");
   const btn1 = document.getElementById("previous");
   const btn2 = document.getElementById("next");
@@ -27,6 +27,7 @@ async function playSongs() {
     }
   })
 }
+*/
 
 async function getSongs() {
   let a = await fetch("http://127.0.0.1:5500/songs/");
@@ -38,12 +39,22 @@ async function getSongs() {
   for (let index = 0; index < at.length; index++) {
     const element = at[index];
     if (element.href.endsWith(".mp3")) {
-      songs.push(element.href);
+      songs.push(element.href.split("/songs/")[1]);
     }
   }
   return songs;
 }
 
 
-getSongs()
-playSongs()
+async function main(){
+  let songs = await getSongs();
+  console.log(songs)
+
+  let songUL =  document.querySelector(".songContainer").getElementsByTagName("ul")[0]
+  for (const song of songs) {
+    songUL.innerHTML = songUL.innerHTML + `<li> ${song.replaceAll("%20"," ")} </li>`;
+    
+  }
+}
+
+main()

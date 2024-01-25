@@ -249,3 +249,11 @@ body{
 .playbarBtn>*{
   cursor: pointer;
 }
+
+
+.songContainer li{
+  list-style: none;
+  padding:4px 10px 4px 10px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
